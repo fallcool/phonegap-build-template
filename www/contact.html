@@ -35,7 +35,7 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 </head>
 
-<body class="dual-sidebar"> 
+<body class="left-sidebar"> 
 
 <div id="preloader">
 	<div id="status">
@@ -93,9 +93,11 @@
                         <strong>5</strong>
                     </a> 
                     <div class="submenu">
-                        <a class="submenu-item" href="index-left.html">     <i class="fa fa-angle-right"></i><em>   Left Sidebar    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="index-right.html">    <i class="fa fa-angle-right"></i><em>   Right Sidebar    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="index-dual.html">     <i class="fa fa-angle-right"></i><em>   Dual Sidebar    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="menu-left.html">     <i class="fa fa-angle-right"></i><em>   Left Sidebar    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="menu-right.html">    <i class="fa fa-angle-right"></i><em>   Right Sidebar    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="menu-dual.html">     <i class="fa fa-angle-right"></i><em>   Dual Sidebar    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="menu-top.html">      <i class="fa fa-angle-right"></i><em>   Top Menu    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="menu-bottom.html">   <i class="fa fa-angle-right"></i><em>   Bottom  Menu    </em><i class="fa fa-circle"></i></a>
                     </div>
                 </div>              
                 <div class="has-submenu">
@@ -142,7 +144,6 @@
                         <a class="submenu-item" href="page-signup.html">    <i class="fa fa-angle-right"></i><em>   Signup    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="page-login.html">     <i class="fa fa-angle-right"></i><em>   User Login    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="page-uses.html">      <i class="fa fa-angle-right"></i><em>   Userlist    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="page-reviews.html">   <i class="fa fa-angle-right"></i><em>   Userlist    </em><i class="fa fa-circle"></i></a>
                     </div>
                 </div>
                 <div class="has-submenu">
@@ -167,7 +168,7 @@
                     <i class="fa fa-youtube-play"></i>
                     <em>Videos</em>
                     <i class="fa fa-circle"></i>
-                </a>                       
+                </a>                     
                 <a class="menu-item" href="page-blog.html">
                     <i class="fa fa-pencil"></i>
                     <em>Blog</em>
@@ -261,42 +262,6 @@
                     <em>YouTube</em>
                 </a>    
             </div>
-                        
-            <p class="sidebar-divider">Send an email</p>
-            
-            <div class="container no-bottom">
-                <div class="sidebar-form contact-form no-bottom"> 
-                    
-                    <em>
-                        Your message is important to us and we reply to all of them in less than 48 hours.
-                    </em>
-                    
-                    <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
-                        Awesome! We'll get back to you!
-                    </div>
-
-                    <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
-                        <fieldset>
-                            <div class="formValidationError" id="contactNameFieldError">Name is required!</div>             
-                            <div class="formValidationError" id="contactEmailFieldError">Mail address required!</div> 
-                            <div class="formValidationError" id="contactEmailFieldError2">Mail address must be valid!</div> 
-                            <div class="formValidationError" id="contactMessageTextareaError">Message field is empty!</div>   
-                            <div class="formFieldWrap">
-                                <input onfocus="if (this.value=='Name') this.value = ''" onblur="if (this.value=='') this.value = 'Name'" type="text" name="contactNameField" value="Name" class="contactField requiredField" id="contactNameField"/>
-                            </div>
-                            <div class="formFieldWrap">
-                                <input onfocus="if (this.value=='Email') this.value = ''" onblur="if (this.value=='') this.value = 'Email'" type="text" name="contactEmailField" value="Email" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
-                            </div>
-                            <div class="formTextareaWrap">
-                                <textarea onfocus="if (this.value=='Message') this.value = ''" onblur="if (this.value=='') this.value = 'Message'" name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea">Message</textarea>
-                            </div>
-                            <div class="formSubmitButtonErrorsWrap">
-                                <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
-                            </div>
-                        </fieldset>
-                    </form>       
-                </div>
-            </div>
             
             <p class="sidebar-divider">Contact Us</p>
             
@@ -324,227 +289,85 @@
         <div id="content" class="snap-content">
             <div class="content">
             <div class="header-clear"></div>
-            <!--Page content goes here, fixed elements go above the all elements class-->
-
-                <div class="homepage-slider container-fullscreen">
-                    <div class="homepage-slider-transition" data-snap-ignore="true">
-                        <div class="homepage-slider-item">
-                            <h5 class="left-text">Welcome, stranger</h5>
-                            <p class="left-text">Swipe the image to begin.</p>
-                            <img src="images/pictures/4.jpg" alt="img">
-                            <div class="overlay bg-black"></div>
-                        </div>                
-                        <div class="homepage-slider-item">
-                            <h5 class="center-text">This slider has CSS3 transitions</h5>
-                            <p class="center-text">And they are just awesome!</p>
-                            <img src="images/pictures/5.jpg" alt="img">
-                            <div class="overlay bg-black"></div>
-                        </div>                
-                        <div class="homepage-slider-item">
-                            <h5 class="right-text">Just add a simple class</h5>
-                            <p class="right-text">And you got yourself transitions!</p>
-                            <img src="images/pictures/6.jpg" alt="img">
-                            <div class="overlay bg-black"></div>
-                        </div>
-                    </div>
-                    <a href="#" class="next-home-slider"><i class="fa fa-angle-right"></i></a>
-                    <a href="#" class="prev-home-slider"><i class="fa fa-angle-left"></i></a>
-                </div>     
+            <!--Page content goes here, fixed elements go above the all elements class-->  
                 
-                <div class="container">
-                    <h4>Welcome</h4>
-                    <p>
-                        The most complete mobile and tablet product. Give your page the true 
-                        and native mobile feel it really deserves.
-                        <a href="#" class="right-text small-text half-top">Read More <i class="fa space-left fa-long-arrow-right"></i></a>
-                    </p>
+                 <div class="container-fullscreen">
+                    <iframe class="responsive-image maps" src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
                 </div>
                 
-                <div class="decoration"></div>
-                
-                <div class="container-fullscreen heading-style-3 bg-3">
-                    <h4 class="heading-title">What can it do?</h4>
-                    <em class="heading-subtitle">The power behind the beauty!</em>
-                    <div class="overlay bg-black"></div>
-                </div>
-                
-                <div class="container-fullscreen">
-                    <div class="one-half-responsive">
-                        <p class="image-column-left">
-                            <img src="images/pictures/3s.jpg" alt="img">
-                            <strong>Mobile Ready</strong>
-                            <em>
-                                Pixel perfect designs are what we care about. Quality above all!
-                            </em>
-                        </p>   
-                    </div>
-                    <div class="decoration hide-if-responsive"></div>
-                    <div class="one-half-responsive last-column">
-                        <p class="image-column-right">
-                            <img src="images/pictures/5s.jpg" alt="img">
-                            <strong>PhoneGap & Cordova</strong>
-                            <em>
-                                Designed for use as a site template, built in mind for app developers!
-                            </em>
-                        </p>
-                    </div>
-                    <div class="decoration"></div>            
-                    <div class="one-half-responsive">
-                        <p class="image-column-left">
-                            <img src="images/pictures/6s.jpg" alt="img">
-                            <strong>Elite Quality</strong>
-                            <em>
-                                We belive in quality, we became elite because of it! It's priceless!
-                            </em>
-                        </p>     
-                    </div>
-                    <div class="decoration hide-if-responsive"></div>
-                        <div class="one-half-responsive last-column">
-                        <p class="image-column-right">
-                            <img src="images/pictures/8s.jpg" alt="img">
-                            <strong>Easy, just add water!</strong>
-                            <em>
-                                Things made as easy as possible! We want you not to stress it! 
-                            </em>
-                        </p>
-                    </div>
-                    <div class="decoration"></div>
-                </div>
-                
-                <div class="container-fullscreen heading-style-3 bg-5">
-                    <h4 class="heading-title">Meet our Team!</h4>
-                    <em class="heading-subtitle">Get more from us, get social!</em>
-                    <div class="overlay bg-black"></div>
-                </div>
-
-                <div class="staff-slider">
-                    <div class="staff-slider-no-transition" data-snap-ignore="true">
-                        <div class="staff-item">
-                            <img class="scale-hover" src="images/pictures/3s.jpg" alt="img">
-                            <h3>John Doe</h3>
-                            <em class="color-red-dark">Professional Freelancer</em>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Aliquam at imperdiet enim, ut laoreet dolor. Maecenas 
-                                vitae nibh in sapien vehicula fermentum id vitae lorem.    
-                            </p>
-                            <div class="staff-icons staff-icons-three">
-                                <a class="social-ball facebook-color scale-hover" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="social-ball phone-color scale-hover" href="#"><i class="fa fa-phone"></i></a>
-                                <a class="social-ball twitter-color scale-hover" href="#"><i class="fa fa-twitter"></i></a>
-                            </div>   
-                        </div>
-                        <div class="staff-item">
-                            <img class="scale-hover" src="images/pictures/5s.jpg" alt="img">
-                            <h3>Alexander Joe</h3>
-                            <em class="color-green-dark">Software Manager</em>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Aliquam at imperdiet enim, ut laoreet dolor. Maecenas 
-                                vitae nibh in sapien vehicula fermentum id vitae lorem.    
-                            </p>
-                            <div class="staff-icons staff-icons-two">
-                                <a class="social-ball phone-color scale-hover" href="#"><i class="fa fa-phone"></i></a>
-                                <a class="social-ball twitter-color scale-hover" href="#"><i class="fa fa-twitter"></i></a>
+                <div class="one-half-responsive">
+                    <h4>Send us an email!</h4>
+                    <p>Use the form to send us a message, it's AJAX and PHP powered and it's easy to use!</p>
+                    <div class="container no-bottom">
+                        <div class="contact-form no-bottom"> 
+                            <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                                <div class="big-notification green-notification">
+                                    <h3 class="uppercase">Message Sent </h3>
+                                    <a href="#" class="close-big-notification">x</a>
+                                    <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank you!</p>
+                                </div>
                             </div>
-                        </div>                    
-                        <div class="staff-item">
-                            <img class="scale-hover" src="images/pictures/7s.jpg" alt="img">
-                            <h3>Vitor Hidden</h3>
-                            <em class="color-orange-dark">Support Staff</em>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Aliquam at imperdiet enim, ut laoreet dolor. Maecenas 
-                                vitae nibh in sapien vehicula fermentum id vitae lorem.    
-                            </p>
-                            <div class="staff-icons staff-icons-one">
-                                <a class="social-ball phone-color scale-hover" href="#"><i class="fa fa-phone"></i></a>
-                            </div>
+
+                            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                                <fieldset>
+                                    <div class="formValidationError bg-red-dark color-white" id="contactNameFieldError">
+                                        <p class="center-text uppercase small-text">Name is required!</p>
+                                    </div>             
+                                    <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError">
+                                        <p class="center-text uppercase small-text">Mail address required!</p>
+                                    </div> 
+                                    <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError2">
+                                        <p class="center-text uppercase small-text">Mail address must be valid!</p>
+                                    </div> 
+                                    <div class="formValidationError bg-red-dark color-white" id="contactMessageTextareaError">
+                                        <p class="center-text uppercase small-text">Message field is empty!</p>
+                                    </div>   
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span></label>
+                                        <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                                    </div>
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span></label>
+                                        <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                                    </div>
+                                    <div class="formTextareaWrap">
+                                        <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span></label>
+                                        <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                                    </div>
+                                    <div class="formSubmitButtonErrorsWrap">
+                                        <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
+                                    </div>
+                                </fieldset>
+                            </form>       
                         </div>
                     </div>
-                    <a class="next-staff-slider" href="#"><i class="fa fa-angle-right"></i></a>
-                    <a class="prev-staff-slider" href="#"><i class="fa fa-angle-left"></i></a>
                 </div>
-                <div class="decoration"></div>
-                
-                <div class="container-fullscreen heading-style-3 bg-3">
-                    <h4 class="heading-title">Featured Project</h4>
-                    <em class="heading-subtitle">Out latest thing we brag about!</em>
-                    <div class="overlay bg-black"></div>
-                </div>
-                
-                <div class="container">
-                    <div class="one-half-responsive">
-                        <a href="#"><img src="images/demo_img.png" class="responsive-image full-bottom" alt="img"></a>
-                    </div>
-                    <div class="one-half-responsive last-column">
-                        <h4 class="center-text-mobile">ProMobile</h4>
-                        <em class="small-heading color-red-dark center-text-mobile">Mobile and Tablet Template</em>
-                        <p class="center-text-mobile">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Phasellus cursus lacinia pharetra. Cras at lacinia odio, 
-                            quis vulputate ligula. Nulla facilisi. 
+                <div class="decoration hide-if-responsive"></div>
+                <div class="one-half-responsive last-column">
+                    <div class="container no-bottom">
+                        <h4>Contact Information</h4>
+                        <p>
+                            <strong>Postal Information</strong><br>
+                            PO Box 16122 Collins Street West<br>
+                            Victoria 8007 Australia
                         </p>
-                    </div>
-                </div>
-                <div class="decoration"></div>
-
-                <div class="container-fullscreen heading-style-3 bg-2">
-                    <h4 class="heading-title">What we've built</h4>
-                    <em class="heading-subtitle">Products built by us!</em>
-                    <div class="overlay bg-black"></div>
-                </div>
+                        <p>
+                            <strong>Envato Headquarters</strong><br>
+                            121 King Street, Melbourne <br>
+                            Victoria 3000 Australia
+                        </p>
+                        <p>
+                            <strong>Contact Information:</strong><br>
+                            <a href="tel: +123 456 7890" class="contact-call"><i class="fa fa-phone"></i>+ 123 456 7890</a>
+                            <a href="sms: +123 456 7890" class="contact-text"><i class="fa fa-comments"></i>+ 123 456 7890</a>
+                            <a href="mailto:name@domain.com" class="contact-mail"><i class="fa fa-envelope"></i>mail@doamin.com</a>
+                            <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>enabled.labs</a>
+                            <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>@iEnabled</a>
+                        </p>
+                    </div>            
+                </div>         
                 
-                <div class="container">
-                    <p>
-                        You can't really isolate your work in just a few items from a single cateogry, so we've
-                        built a filterable gallery and a filterable portfolio just for these situations.
-                    </p>
-                </div>
-
-                <div class="portfolio-filter">
-                    <div class="portfolio-filter-categories">
-                        <a href="#" class="filter-category selected-filter" data-rel="all-cat">All</a>
-                        <a href="#" class="filter-category" data-rel="cat1">Websites</a>
-                        <a href="#" class="filter-category" data-rel="cat2">Flyers</a>
-                        <a href="#" class="filter-category" data-rel="cat3">Business</a>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="portfolio-filter-wrapper">
-                        <div class="cat1 all-cat gallery-filter-item">
-                            <a class="show-gallery-1" href="images/pictures/1.jpg">
-                                <img src="images/pictures/1s.jpg" class="responsive-image" alt="img">
-                            </a>                        
-                        </div>                        
-                        <div class="cat2 all-cat gallery-filter-item">
-                            <a class="show-gallery-2" href="images/pictures/2.jpg">
-                                <img src="images/pictures/2s.jpg" class="responsive-image" alt="img">
-                            </a>                        
-                        </div>                        
-                        <div class="cat3 all-cat gallery-filter-item">
-                            <a class="show-gallery-3" href="images/pictures/3.jpg">
-                                <img src="images/pictures/3s.jpg" class="responsive-image" alt="img">
-                            </a>                        
-                        </div>                        
-                        <div class="cat1 all-cat gallery-filter-item">
-                            <a class="show-gallery-1" href="images/pictures/4.jpg">
-                                <img src="images/pictures/4s.jpg" class="responsive-image" alt="img">
-                            </a>                        
-                        </div>                        
-                        <div class="cat2 all-cat gallery-filter-item">
-                            <a class="show-gallery-2" href="images/pictures/5.jpg">
-                                <img src="images/pictures/5s.jpg" class="responsive-image" alt="img">
-                            </a>                        
-                        </div>                        
-                        <div class="cat3 all-cat gallery-filter-item">
-                            <a class="show-gallery-3" href="images/pictures/6.jpg">
-                                <img src="images/pictures/6s.jpg" class="responsive-image" alt="img">
-                            </a>                        
-                        </div>   
-                    </div>
-                </div>
-                
-                <div class="decoration"></div>
+                <div class="decoration"></div>               
                 
                 <div class="footer">
                     <p class="center-text">Copyright 2015. All rights reserved.</p>
@@ -557,8 +380,6 @@
                     </div>
                 </div>
                                 
-                
-                
             <!-- End of entire page content-->
             </div> 
         </div>

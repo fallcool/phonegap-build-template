@@ -18,7 +18,7 @@
     </author>
 	
 	<!-- Define the main entry-point to the application -->
-	<content src="http://glms.gougu.com" />
+	<content src="index.html" />
 
     <!-- The platforms to build for. Only build what you want to target! -->
     <gap:platform name="ios" />
